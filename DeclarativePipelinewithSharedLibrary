@@ -1,3 +1,4 @@
+@library('mycicdlib')_
 pipeline
 {
   agent any
