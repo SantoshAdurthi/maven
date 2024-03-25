@@ -1,0 +1,31 @@
+pipeline
+{
+  agent any
+  stages
+  {
+    stage ('ConDownload')
+    {
+      steps
+      {
+        script
+        {
+          try
+          {
+            cicd.gitDownload("maven")
+          }
+          catch
+          {
+            cicd.e1 ()
+          }
+        }
+      }
+    }
+
+
+
+
+
+
+
+  }
+}
